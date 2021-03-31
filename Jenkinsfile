@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'echo "Build processing"'
+        sh '''export MAVEN_HOME=/usr/local/Cellar/maven/3.6.3_1
+export PATH=$PATH:$MAVEN_HOME/bin
+mvn clean package'''
       }
     }
 
