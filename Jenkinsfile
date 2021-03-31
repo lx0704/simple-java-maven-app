@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'touch init.txt'
+        sh 'mvn install'
       }
     }
 
