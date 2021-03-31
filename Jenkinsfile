@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'vim pom.xml'
+        sh 'touch init.txt'
       }
     }
 
